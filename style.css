@@ -107,7 +107,28 @@ img {
 				font-size: 1.25em;
 			}
 
-		
+.banner {
+	width: 100%;
+	height: 45.938rem;
+	background-image: url('images/banner.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: auto;
+}
+
+	.banner-container {
+		width: 60em;
+		height: 45.938rem;
+		position: absolute;
+		top: 10em;
+		left: 12em;
+		text-align: center;
+	}
+
+		.banner-container h1, h2, h3 {
+			font-size: 5em;
+			font-family: 'Slabo 27px', serif;
+		}
 
 
 
