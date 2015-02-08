@@ -252,3 +252,24 @@ img {
 			color: #3E1302;
 		}
 
+.footer {
+	background-color: #3E1302;
+	text-align: center;
+	margin-top: 3em;
+	clear: both;
+}
+	
+	.footer h1 {
+		color: #D1D7DA;
+		font-size: 1.5em;
+		font-family: 'Oswald', cursive;
+		text-transform: uppercase;
+		margin-bottom: 1.25em;
+	}
+		.links {
+			margin: 0 auto;
+		}
+		.links li {
+			display: inline;
+			margin: 0 1em;
+		}
