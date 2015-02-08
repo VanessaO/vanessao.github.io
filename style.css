@@ -153,7 +153,7 @@ img {
 			margin: 0 auto;
 		}
 
-		.about .container h1, p {
+		.about .container h1, .about .conntainer p {
 			color: #3E1302;
 			text-align: center;
 		}
@@ -183,7 +183,68 @@ img {
 			color: #F3F3F1;
 		}
 
+.porfolio {}
+	
+	.portfolio .container > h1 {
+		font-family:'Playball', cursive;
+		font-size: 7em;
+		color: #3E1302;
+		text-align: center;
+	}
 
+	.portfolio-peice {
+		padding: 3em;
+		clear: both;
+	}
+	.screenshot {
+		float: left;
+		width: 50%;
+		border: 2px solid #676A6B;
+	}
 
+		.browser-bar {
+			position: relative;
+			width: 100%;
+			height: 11px;
+			line-height: 11px;
+			border-radius: 3px 3px 0 0;
+			height: 21px;
+			font-size: 1px;
+			background-color: #D1D7DA;
+			line-height: 26px;
+		}
+	
+		.browser-button {
+			height: 6px;
+			margin-left: 5px;
+			display: inline-block;
+			font-size: 9px;
+			line-height: 20px;
+			background-color: #7f7f7f;
+			width: 6px;
+			border-radius: 100%;
+		}
+
+	.info {
+		width: 30%;
+		float: right;
+		text-align: center;
+		padding: 6.5em 0;
+	}
+		.info h1 {
+			color: #3E1302;
+			font-size: 2em;
+			font-family: 'Playball'; cursive;
+			margin-bottom: 0.75rem;
+		}
+
+		.info p {
+			color: #C1740C;
+			margin-bottom: 0.75rem;
+		}
+		
+		.info a {
+			color: #3E1302;
+		}
 
 
