@@ -200,6 +200,7 @@ img {
 		float: left;
 		width: 50%;
 		border: 2px solid #676A6B;
+		margin: 0 0 1em 0;
 	}
 
 		.browser-bar {
@@ -237,6 +238,10 @@ img {
 			font-family: 'Playball'; cursive;
 			margin-bottom: 0.75rem;
 		}
+		
+		.info p, .info a {
+			font-family: 'Oswald', serif;
+		}
 
 		.info p {
 			color: #C1740C;
@@ -246,5 +251,4 @@ img {
 		.info a {
 			color: #3E1302;
 		}
-
 
