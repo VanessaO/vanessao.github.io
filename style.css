@@ -117,18 +117,73 @@ img {
 }
 
 	.banner-container {
-		width: 60em;
+		width: 70em;
 		height: 45.938rem;
 		position: absolute;
-		top: 10em;
-		left: 12em;
-		text-align: center;
+		top: 7.5em;
+		left: 7em;
+		text-align: left;
 	}
 
 		.banner-container h1, h2, h3 {
+			font-family: 'Oswald', sans-serif;
 			font-size: 5em;
-			font-family: 'Slabo 27px', serif;
+			line-height: 1.20em;
 		}
+
+.about {
+	background-color: #C19F62;
+}
+	/** USED FOR ALL CONTAINERS */
+	.container {
+		padding: 5em 8em;
+	}
+
+		.userPic {
+			width: 150px;
+			height: 150px;
+			background: url('images/userPic.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			-moz-border-radius: 75px;
+			-webkit-border-radius: 75px;
+			border-radius: 75px;
+			border: 2px solid #3E1302;
+			margin: 0 auto;
+		}
+
+		.about .container h1, p {
+			color: #3E1302;
+			text-align: center;
+		}
+
+		.about .container h1 {
+			font-family: 'Playball', cursive;
+			font-size: 7em;
+			line-height: 1em;
+		}
+
+		.about .container p {
+			font-family: 'Oswald', serif;
+			font-weight: 300;
+			font-size: 2em;
+			line-height: 1.25em;
+			margin: 0.5em 0;
+		}
+
+.quote {
+	background-color: #C1740C;
+}
+	.container{}
+
+		.quote .container p {
+			font-size: 3em;
+			font-family:'Playball', cursive;
+			color: #F3F3F1;
+		}
+
+
 
 
 
