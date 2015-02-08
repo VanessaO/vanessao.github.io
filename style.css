@@ -295,5 +295,8 @@ img {
 		.links li {
 			display: inline;
 			margin: 0 1em;
-			
 		}
+
+			.links .fa {
+				font-size: 2em;
+			}
