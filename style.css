@@ -128,7 +128,7 @@ img {
 		width: 70em;
 		height: 45.938rem;
 		position: absolute;
-		top: 7.5em;
+		top: 6.75em;
 		left: 7em;
 		text-align: left;
 	}
@@ -137,6 +137,12 @@ img {
 			font-family: 'Oswald', sans-serif;
 			font-size: 5em;
 			line-height: 1.20em;
+		}
+
+		.banner-container .hello-bubble {
+			position: absolute;
+			left: 27em;
+			bottom: 18.75em;
 		}
 
 .about {
@@ -260,7 +266,9 @@ img {
 
 		.info p {
 			color: #C1740C;
+			line-height: 1.25rem;
 			margin-bottom: 0.75rem;
+
 		}
 		
 		.info a {
