@@ -107,6 +107,14 @@ img {
 				font-size: 1.25em;
 			}
 
+			.navigation-container .menu a:hover {
+				color: #8C4907;
+			}
+
+			.navigation-container .menu a:active {
+				color: #C1740C;
+			}
+
 .banner {
 	width: 100%;
 	height: 45.938rem;
@@ -153,7 +161,7 @@ img {
 			margin: 0 auto;
 		}
 
-		.about .container h1, .about .conntainer p {
+		.about .container h1, .about .container p, .about .container a  {
 			color: #3E1302;
 			text-align: center;
 		}
@@ -173,6 +181,10 @@ img {
 			margin: 0.5em 0;
 		}
 
+		.about .container a {
+			font-weight: bolder;
+		}
+
 .quote {
 	background-color: #C1740C;
 }
@@ -184,7 +196,9 @@ img {
 			color: #F3F3F1;
 		}
 
-.porfolio {}
+.porfolio {
+	background-color: #F3F3F1
+}
 	
 	.portfolio .container > h1 {
 		font-family:'Playball', cursive;
