@@ -1,3 +1,9 @@
+@font-face {
+	font-family: Lot;
+    src: url(../fonts/lot.otf);
+}
+
+
 //-------------------------------------------- Foundation
 
 // Reference: http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation
@@ -76,12 +82,15 @@ img {
 /* Navigation ----------------------------------------------- */
 
 .navigation {
-	background-color: black;
-	border-bottom: 1px solid #DDD;
 	width: 100%;
 	margin: 0;
 	position: fixed;
 	z-index: 9999;	
+}
+
+.navigation-visible {
+	background-color: #000;
+	border-bottom: 1px solid #DDD;
 }
 
 	.navigation-container {
@@ -89,7 +98,7 @@ img {
 		max-width: 62.5em;
 	}
 
-		.navigation-container .logo, a {
+		.logo, .navigation-container a {
 			font-family: 'Oswald', sans-serif;
 			color: #fff;
 		}
@@ -125,37 +134,72 @@ img {
 .banner {
 	width: 100%;
 	height: 45.938rem;
-	background-image: url('images/Optimized-banner.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	overflow: auto;
+	background-color: #F9F1DD;
 }
 
 	.banner-container {
-		width: 70em;
-		height: 45.938rem;
-		position: absolute;
-		top: 6.75em;
-		left: 7em;
-		text-align: left;
+		margin: 0 auto;
+		position: relative;
+		top: 40%;
+		transform: translateY(-50%);
+		text-align: center;
+		border: 1px solid red;
 	}
 
-		.banner-container h1, h2, h3 {
-			font-family: 'Oswald', sans-serif;
-			font-size: 5em;
+		.titleName {
+			font-family: 'Lot', 'Arial Bold', sans-serif;
+			font-size: 10em;
+			letter-spacing: 0.2em;
 			line-height: 1.20em;
 		}
+			/* Multi-colored text */
+			.char1 {
+				color: #fe4800;
+			}
 
-		.banner-container .hello-bubble {
-			position: absolute;
-			left: 27em;
-			bottom: 18.75em;
+			.char2 {
+				color: #a3e400;
+			}
+
+			.char3 {
+				color: #fec700;
+			}
+
+			.char4 {
+				color: #0037fe;
+			}
+
+			.char5 {
+				color: #a3e400;
+			}
+
+			.char6 {
+				color: #fe4800;
+			}
+
+			.char7 {
+				color: #fec700;
+		}
+
+		.banner-container h2, h3 {
+			font-family: 'Oswald', sans-serif;
+			font-size: 3em;
+			font-weight: 200;
+		}
+
+		.goDown {
+			color: #000;
+			display: inline-block;
+			position: relative;
+			top: 2em;
+			padding: 1em;
+			font-family: 'Oswald', sans-serif;
 		}
 
 /* About ----------------------------------------------- */
 
 .about {
-	background-color: #C19F62;
+	background-color: #fec700;
 }
 	/** USED FOR ALL CONTAINERS */
 	.container {
@@ -165,7 +209,7 @@ img {
 		.userPic {
 			width: 150px;
 			height: 150px;
-			background: url('images/userPic.jpg');
+			background: url('../images/userPic.jpg');
 			background-size: cover;
 			background-position: center;
 			background-repeat: no-repeat;
