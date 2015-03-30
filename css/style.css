@@ -105,7 +105,7 @@ section {
 
 .navigation-visible {
 	background-color: #000;
-	border-bottom: 1px solid #DDD;
+	border-bottom: 1px solid #ccc;
 }
 
 	.navigation-container {
@@ -305,7 +305,6 @@ section {
 .footer {
 	background-color: #194bfe;
 	text-align: center;
-	margin-top: 3em;
 	clear: both;
 }
 	
