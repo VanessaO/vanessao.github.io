@@ -1,10 +1,10 @@
 @font-face{ 
 	font-family: 'Lot';
-	src: url('../fonts/LOT-webFont.eot');
-	src: url('../fonts/LOT-webFont.eot?#iefix') format('embedded-opentype'),
-	     url('../fonts/LOT-webFont.woff') format('woff'),
-	     url('../fonts/LOT-webFont.ttf') format('truetype'),
-	     url('../fonts/LOT-webFont.svg#webfont') format('svg');
+	src: url('../fonts/LOT-webfont.eot');
+	src: url('../fonts/LOT-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/LOT-webfont.woff') format('woff'),
+	     url('../fonts/LOT-webfont.ttf') format('truetype'),
+	     url('../fonts/LOT-webfont.svg#webfont') format('svg');
 }
 
 
