@@ -1,7 +1,7 @@
 $(document).ready(function(){
-	$(".titleName").lettering();
 
-	$(".titleName").addClass('animated swing');
+	//Colorizes title and makes it responsive
+	$(".titleName").lettering().addClass('animated swing').fitText(0.8);
 
 	$(".goDown").hover(
 		function(){
@@ -23,7 +23,7 @@ $(document).ready(function(){
     	auto: false
     });
    
-    $('a[href*=#]:not([href=#])').click(function() {
+   $('a[href*=#]:not([href=#])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
 	        || location.hostname == this.hostname) {
 
@@ -36,7 +36,7 @@ $(document).ready(function(){
 	            return false;
 	        }
 	    }
-	});
+	}); 
 
 
 

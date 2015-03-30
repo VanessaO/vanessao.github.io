@@ -22,7 +22,9 @@ html {
 
 body {
 	margin: 0;
-	font: 16px/1 sans-serif;
+	font-size: 100%;
+	line-height: 1.6875;
+    font-family: sans-serif;
 }
 
 iframe {
@@ -284,7 +286,9 @@ section {
 
 .fake-browser-ui .frame {
 	display: block;
+	border-bottom: 1px solid black;
 	height: 15px;
+	width: 100%;
 	position: absolute;
 	top: 5px;
 	left: 1px;
@@ -328,3 +332,9 @@ section {
 			.links .fa {
 				font-size: 2em;
 			}
+
+/* Media Queries ----------------------------------------------- */
+
+@media only screen and (max-width: 400px) {
+    body { font-size:90%;}
+ }
