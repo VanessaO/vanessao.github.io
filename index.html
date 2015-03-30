@@ -4,13 +4,15 @@
 	<meta charset="UTF-8">
 	<title>Vanessa</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="css/animate.css">
 	<link rel="icon" type="image/png" href="favicon.ico" />
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Playball' rel='stylesheet' type='text/css'>
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="js/jquery.lettering-0.6.1.min.js"></script>
 	<script src="js/apps.js"></script>
+	<script src="js/jquery.glide.js"></script>
+	<script src="slippry-1.2.9/dist/slippry.min.js"></script>
+<link rel="stylesheet" href="slippry-1.2.9/dist/slippry.css" />
 </head>
 <body>
 
@@ -53,16 +55,16 @@
 		<section class="about" id="about">
 			
 			<!--ABOUT.CONTAINER // Contains user-pic and text-->
-			<div class="container">
+			<div class="about-info container">
 				<div class="userPic"></div>
-				<h1>About</h1>
-				<p>Vanessa Ogbuehi is a creative professional and bourgeoning front-end developer with a penchant for clean code and kitschy designs. Though an Illinois native with California roots, she currently lives right outside of Philadelphia. 
+				<p>Hey, I'm Vanessa Ogbuehi.</p>
+				<p>I'm a creative professional and bourgeoning front-end developer with a penchant for clean code and kitschy designs. Though an Illinois native with California roots, I currently live right outside of Philadelphia.</p>
+				<p>When I'm not coding up a storm, I like to act, read up on social theory, or cook delicious vegan food.</p>
 
-				<p>She has a degree in Theatre and will sing you musical selections if you ask politely. </p>
-
-				<p>When she's not coding up a storm, Vanessa likes to sew things, read sociological texts, and cook delicious vegan food.</p>
-
-				<p>Vanessa is currently a student at <a href="http://www.thinkful.com/">Thinkful</a> and doesn't know why this is in the third-person.</p>
+				<p>I make pretty things.</p>
+			</div>
+			<div class="philly">
+				<img src="images/Philly-Map.png" alt="Map of Philadelphia" />
 			</div>
 		</section>
 
@@ -72,94 +74,94 @@
 			<!--QUOTE.CONTAINER // Contains quote-->
 			<div class="container">
 				<p>"The world always seems brighter when you’ve just made something that wasn’t there before." — Neil Gaiman</p>
+				<!--<h1>Skills</h1>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Javascript</li>
+					<li>Jquery</li>
+					<li>AJAX/APIs</li>
+				</ul>-->
 			</div>
 		</section>
 
-		<!--PORTFOLIO // Contains very light gray background-->
+		<!--PORTFOLIO // Contains very light tan background-->
 		<section class="portfolio" id="portfolio">
 			
-			<!--PORTFOLIO.CONTAINER // Contains portfolio heading and work-->
-			<div class="container">
-				<h1>Work</h1>
-				
-				<!--PORTFOLIO.PEICE // Contains screenshot and side caption for peice one-->
-				<div class="portfolio-peice">
+			<div class="container">	
 
-					<div class="screenshot">
-						<div class="browser-bar">
-							<div class="browser-button"></div>
-							<div class="browser-button"></div>
-							<div class="browser-button"></div>
-						</div>
-						<img src="images/about-me-page.png" alt="About Me Page Screenshot" width="552px" height="400px">
-					</div>
-					
-					<div class="info">
-						<h1>About Me</h1>
-						<p>A brief introduction to me.</p>
-						<a href="http://codepen.io/VanessaO/full/RNZPZd">See Project</a>
-					</div>
-				</div>
-				
-				<!--PORTFOLIO.PEICE // Contains screenshot and side caption for peice two-->
-				<div class="portfolio-peice">
-					
-					<!--SCREENSHOT // Comtains browser bar and screenshot-->
-					<div class="screenshot">
-						<div class="browser-bar">
-							<div class="browser-button"></div>
-							<div class="browser-button"></div>
-							<div class="browser-button"></div>
-						</div>
-						<img src="images/karma-clone-page.png" alt="Karma Clone Page Screenshot" width="552px" height="400px">
-					</div>
-					
-					<!--INFO // Contains side-caption heading, info, and link-->
-					<div class="info">
-						<h1>Karma</h1>
-						<p>A splash page for the start-up company Karma.</p>
-						<a href="http://vanessao.github.io/startup-landing-page-clone/index.html">See Project</a>
-					</div>
-				</div>
-				
-				<!--PORTFOLIO.PEICE // Contains screenshot and side caption for peice three-->
-				<div class="portfolio-peice">
+				<h1>Work</h1>	
 
-					<div class="screenshot">
-						<div class="browser-bar">
-							<div class="browser-button"></div>
-							<div class="browser-button"></div>
-							<div class="browser-button"></div>
+				<ul id="slippry-demo">
+				  
+				  <li>
+				    <a href="#slide1">
+						<div class="fake-browser-ui">
+							<div class="frame">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<img src="images/karma-clone-page.png" alt="">
 						</div>
-						<img src="images/flat-design-page.png" alt="Flat Design Page Screenshot" width="552px" height="400px">
-					</div>
-					
-					<div class="info">
-						<h1>Bloom</h1>
-						<p>A pretty web page exploring some principals of flat-design.</p>
-						<a href="http://vanessao.github.io/flat-design-page/index.html">See Project</a>
-					</div>
-				</div>
-				
-				<!--PORTFOLIO.PEICE // Contains screenshot and side caption for peice four-->
-				<div class="portfolio-peice">
+				    </a>
+				  </li>
 
-					<div class="screenshot">
-						<div class="browser-bar">
-							<div class="browser-button"></div>
-							<div class="browser-button"></div>
-							<div class="browser-button"></div>
+				  <li>
+				    <a href="#slide2">
+				    	<div class="fake-browser-ui">
+							<div class="frame">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<img src="images/shoplist.png"  alt="">
 						</div>
-						<img src="images/hack-the-times.png" alt="Hack the Times Page Screenshot" width="552px" height="400px">
-					</div>
+				    </a>
+				  </li>
 
-					<div class="info">
-						<h1>Kind of Okay Times</h1>
-						<p>An HTML/CSS project that adds a little pizazz to the New York Times.</p>
-						<a href="http://i59.tinypic.com/21zyhl.png">See Project</a>
-					</div>
-				</div>
+				  <li>
+				    <a href="#slide3">
+				    	<div class="fake-browser-ui">
+							<div class="frame">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<img src="images/hot-cold.png" alt="">
+						</div>
+				    </a>
+				  </li>
+
+				  <li>
+				    <a href="#slide4">
+				    	<div class="fake-browser-ui">
+							<div class="frame">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<img src="images/cat-grab.png" alt="">
+						</div>
+				    </a>
+				  </li>
+
+				  <li>
+				    <a href="#slide5">
+				    	<div class="fake-browser-ui">
+							<div class="frame">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<img src="images/flat-design-page.png" alt="">
+						</div>
+				    </a>
+				  </li>
+
+				</ul>
 			</div>
+	
 		</section>
 
 		<!--FOOTER // Contains ruby background-->

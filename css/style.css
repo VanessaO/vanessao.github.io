@@ -78,6 +78,16 @@ img {
 
 /** BEGIN STYLING */
 
+/* Global Styles--------------------------------------------- */
+
+section {
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	padding: 5em 8em;
+}
 
 /* Navigation ----------------------------------------------- */
 
@@ -86,6 +96,7 @@ img {
 	margin: 0;
 	position: fixed;
 	z-index: 9999;	
+	display: none;
 }
 
 .navigation-visible {
@@ -132,7 +143,6 @@ img {
 /* Banner ----------------------------------------------- */
 
 .banner {
-	width: 100%;
 	height: 45.938rem;
 	background-color: #F9F1DD;
 }
@@ -143,7 +153,6 @@ img {
 		top: 40%;
 		transform: translateY(-50%);
 		text-align: center;
-		border: 1px solid red;
 	}
 
 		.titleName {
@@ -201,11 +210,13 @@ img {
 .about {
 	background-color: #fec700;
 }
-	/** USED FOR ALL CONTAINERS */
-	.container {
-		padding: 5em 8em;
+	
+	.about-info {
+		width: 30em;
+		color: #000;
+		text-align: center;
+		display: inline-block;
 	}
-
 		.userPic {
 			width: 150px;
 			height: 150px;
@@ -220,121 +231,75 @@ img {
 			margin: 0 auto;
 		}
 
-		.about .container h1, .about .container p, .about .container a  {
-			color: #3E1302;
-			text-align: center;
-		}
-
-		.about .container h1 {
-			font-family: 'Playball', cursive;
-			font-size: 7em;
-			line-height: 1em;
-			margin-top: .25em;
-		}
-
-		.about .container p {
+		.about-info p {
 			font-family: 'Oswald', serif;
 			font-weight: 300;
 			font-size: 2em;
 			line-height: 1.25em;
 			margin: 0.5em 0;
 		}
-
-		.about .container a {
-			font-weight: bolder;
-		}
-
+	
+	.philly {
+		display: inline-block;
+		width: 30em;
+	}
 /* Quote ----------------------------------------------- */
 
 .quote {
-	background-color: #C1740C;
+	background-color: #fe5a19;
 }
 	.quote .container p {
-		font-size: 3em;
-		font-family:'Playball', cursive;
+		font-size: 1.5em;
+		font-family: 'Oswald', serif;
+		font-weight: lighter;
 		color: #F3F3F1;
+		line-height: 1.5em;
 	}
 
 /* Portfolio ----------------------------------------------- */
 
-.porfolio {
-	background-color: #F3F3F1
+.portfolio {
+	background-color: #F9F1DD;
+	color: #000;
+	text-align: center;
 }
-	
-	.portfolio .container > h1 {
-		font-family:'Playball', cursive;
-		font-size: 7em;
-		color: #3E1302;
-		text-align: center;
+	.portfolio h1 {
+		font-family: 'Oswald', serif;
+		font-size: 3em;
+		padding: 1em;
 	}
 
-	.portfolio-peice {
-		padding: 3em;
-		clear: both;
-	}
+.fake-browser-ui {
+	padding: 20px 0 0;
+	border-radius: 3px;
+	border: 3px solid #000;
+	display: inline-block;
+	position: relative;
+	line-height: 0;
+}
 
-	.screenshot {
-		float: left;
-		width: 50%;
-		border: 2px solid #676A6B;
-		margin: 0 0 1em 0;
-	}
+.fake-browser-ui .frame {
+	display: block;
+	height: 15px;
+	position: absolute;
+	top: 5px;
+	left: 1px;
+}
+ 
+.fake-browser-ui span {
+	height: 8px;
+	width: 8px;
+	border-radius: 8px;
+	border: 1px solid #000;
+	float: left;
+	margin: 0 0 0 4px;
+}
 
-		.browser-bar {
-			position: relative;
-			width: 100%;
-			height: 11px;
-			line-height: 11px;
-			border-radius: 3px 3px 0 0;
-			height: 21px;
-			font-size: 1px;
-			background-color: #D1D7DA;
-			line-height: 26px;
-		}
-	
-		.browser-button {
-			height: 6px;
-			margin-left: 5px;
-			display: inline-block;
-			font-size: 9px;
-			line-height: 20px;
-			background-color: #7f7f7f;
-			width: 6px;
-			border-radius: 100%;
-		}
-
-	.info {
-		width: 30%;
-		float: right;
-		text-align: center;
-		padding: 6.5em 0;
-	}
-		.info h1 {
-			color: #3E1302;
-			font-size: 2em;
-			font-family: 'Playball'; cursive;
-			margin-bottom: 0.75rem;
-		}
-		
-		.info p, .info a {
-			font-family: 'Oswald', serif;
-		}
-
-		.info p {
-			color: #C1740C;
-			line-height: 1.25rem;
-			margin-bottom: 0.75rem;
-
-		}
-		
-		.info a {
-			color: #3E1302;
-		}
 
 /* Footer ----------------------------------------------- */
 
 .footer {
-	background-color: #3E1302;
+	background-color: #194bfe;
 	text-align: center;
 	margin-top: 3em;
 	clear: both;
