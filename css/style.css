@@ -216,39 +216,57 @@ section {
 .about {
 	background-color: #fec700;
 }
-	
-	.about-info {
-		width: 30em;
-		color: #000;
-		text-align: center;
+
+	.info {
+		width: 49%; /* Has to be 49% as opposed to 50%, or else it breaks */
 		display: inline-block;
+		vertical-align: top;
 	}
-		.userPic {
-			width: 150px;
-			height: 150px;
-			background: url('../images/userPic.jpg');
-			background-size: cover;
-			background-position: center;
-			background-repeat: no-repeat;
-			-moz-border-radius: 75px;
-			-webkit-border-radius: 75px;
-			border-radius: 75px;
-			border: 2px solid #3E1302;
+		.outerRim {
+			width: 170px;
+			height: 170px;
+			-moz-border-radius: 100px;
+			-webkit-border-radius: 100px;
+			border-radius: 100px;
+			border: 1.5px solid #3E1302;
 			margin: 0 auto;
+			position: relative;
 		}
 
-		.about-info p {
+			.userPic {
+				width: 150px;
+				height: 150px;
+				background: url('../images/userPic.jpg');
+				background-size: cover;
+				background-position: center; 
+				background-repeat: no-repeat;
+				-moz-border-radius: 75px;
+				-webkit-border-radius: 75px;
+				border-radius: 75px;
+				border: 1.5px solid #3E1302;
+				/* "Absolute Centering" */
+				margin: auto;
+  				position: absolute;
+  				top: 0; left: 0; bottom: 0; right: 0;
+			}
+
+		.info p {
 			font-family: 'Oswald', serif;
-			font-weight: 300;
-			font-size: 2em;
-			line-height: 1.25em;
-			margin: 0.5em 0;
+			font-size: 1.25em;
+			text-align: center;
+			font-weight: lighter;
+			line-height: 1.5em;
 		}
-	
+
+		.info:first-child p, .info:last-child p {
+ 			margin: 1em 0;
+		}
+
 	.philly {
 		display: inline-block;
-		width: 30em;
+		margin-left: 4em;
 	}
+
 /* Quote ----------------------------------------------- */
 
 .quote {
@@ -336,5 +354,11 @@ section {
 /* Media Queries ----------------------------------------------- */
 
 @media only screen and (max-width: 400px) {
-    body { font-size:90%;}
+    .container { 
+    	padding: 2em;
+    }
+
+    .info {
+    	width: 100%;
+    }
  }
