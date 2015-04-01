@@ -264,7 +264,7 @@ section {
 
 	.philly {
 		display: inline-block;
-		margin-left: 4em;
+		margin-left: 3em;
 	}
 
 /* Quote ----------------------------------------------- */
@@ -272,12 +272,23 @@ section {
 .quote {
 	background-color: #fe5a19;
 }
-	.quote .container p {
+	.quote .container p, h1, ul {
 		font-size: 1.5em;
 		font-family: 'Oswald', serif;
 		font-weight: lighter;
+		text-align: center;
 		color: #F3F3F1;
 		line-height: 1.5em;
+	}
+	
+	.quote h1 {
+		margin: 1em 0;
+		font-weight: bold;
+	}
+
+	.quote ul > li {
+			display: inline-block;
+			margin-right: 1.5em;
 	}
 
 /* Portfolio ----------------------------------------------- */
@@ -291,6 +302,7 @@ section {
 		font-family: 'Oswald', serif;
 		font-size: 3em;
 		padding: 1em;
+		color: #000;
 	}
 
 .fake-browser-ui {
