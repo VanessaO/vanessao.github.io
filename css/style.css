@@ -122,14 +122,12 @@ section {
 
 		.navigation-container .logo {
 			display: inline-block;
-			padding: 0.5em;
 			font-size: 2em;
 			text-transform: uppercase;
 		}
 
 		.navigation-container .menu {
 			float: right;
-			margin-top: 1.5em;
 		}
 
 			.navigation-container .menu li {
@@ -278,7 +276,6 @@ section {
 		font-weight: lighter;
 		text-align: center;
 		color: #F3F3F1;
-		line-height: 1.5em;
 	}
 	
 	.quote h1 {
@@ -301,7 +298,6 @@ section {
 	.portfolio h1 {
 		font-family: 'Oswald', serif;
 		font-size: 3em;
-		padding: 1em;
 		color: #000;
 	}
 

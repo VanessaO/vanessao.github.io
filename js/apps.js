@@ -20,7 +20,10 @@ $(document).ready(function(){
     });
 
     $('#slippry-demo').slippry({
-    	auto: false
+    	auto: false,
+    	captionsSrc: 'li',
+    	captions: 'custom',
+    	captionsEl: '.caption'
     });
    
    $('a[href*=#]:not([href=#])').click(function() {
