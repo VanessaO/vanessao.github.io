@@ -10,7 +10,8 @@ $(document).ready(function(){
 			$(this).removeClass('animated infinite bounce');
 		}
 	);
-                             
+    
+    //Fades in navbar on down scroll, fades out at top of page                     
     $(window).scroll(function(){  
         if ($(this).scrollTop() > 500) {
             $('.navigation').addClass('navigation-visible').fadeIn(500);
@@ -19,13 +20,15 @@ $(document).ready(function(){
         }
     });
 
+    //Slippry Image Carousel Options
     $('#slippry-demo').slippry({
     	auto: false,
     	captionsSrc: 'li',
     	captions: 'custom',
     	captionsEl: '.caption'
     });
-   
+
+   //
    $('a[href*=#]:not([href=#])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
 	        || location.hostname == this.hostname) {

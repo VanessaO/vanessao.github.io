@@ -113,6 +113,7 @@ section {
 	.navigation-container {
 		margin: 0 auto;
 		max-width: 62.5em;
+		padding: 0.50em;
 	}
 
 		.logo, .navigation-container a {
@@ -213,12 +214,12 @@ section {
 
 .about {
 	background-color: #fec700;
+	overflow: hidden;
 }
 
 	.info {
-		width: 49%; /* Has to be 49% as opposed to 50%, or else it breaks */
-		display: inline-block;
-		vertical-align: top;
+		width: 45%;
+		float: left;
 	}
 		.outerRim {
 			width: 170px;
@@ -261,8 +262,8 @@ section {
 		}
 
 	.philly {
-		display: inline-block;
-		margin-left: 3em;
+		//width: 45%;
+		float: right;
 	}
 
 /* Quote ----------------------------------------------- */
@@ -285,7 +286,7 @@ section {
 
 	.quote ul > li {
 			display: inline-block;
-			margin-right: 1.5em;
+			margin: 0 1em;
 	}
 
 /* Portfolio ----------------------------------------------- */
@@ -329,6 +330,10 @@ section {
 	margin: 0 0 0 4px;
 }
 
+.caption h1:hover {
+	color: #a3e400;
+}
+
 
 /* Footer ----------------------------------------------- */
 
@@ -359,14 +364,38 @@ section {
 				font-size: 2em;
 			}
 
-/* Media Queries ----------------------------------------------- */
+/* Media Queries -----------------------------------------------*/
 
-@media only screen and (max-width: 400px) {
+/* Smartphones */
+@media only screen and (max-width: 900px) {
     .container { 
     	padding: 2em;
+    }
+
+    .banner h1 {
+		font-size: 0.25em;
     }
 
     .info {
     	width: 100%;
     }
+
+    .navigation-container a {
+			font-size: 0.55em;
+		}
+
+	.philly {
+		display: none;
+	}
+} 
+
+/* Tablet Portrait (to landscape and desktop) */
+@media only screen and (max-width: 1074px) {
+
+	.philly {
+		width: 50%;
+		position: relative;
+		left: 5em;
+	}
+
  }
