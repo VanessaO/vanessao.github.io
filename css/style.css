@@ -332,6 +332,17 @@ section {
 	margin: 0 0 0 4px;
 }
 
+.frame span:first-child {
+	background-color: #fec700;
+}
+
+.frame span:nth-child(2) {
+	background-color: #fe4800;
+}
+
+.frame span:last-child {
+	background-color: #0037fe;
+}
 .caption h1:hover {
 	color: #a3e400;
 }
