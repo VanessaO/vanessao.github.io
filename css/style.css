@@ -261,9 +261,11 @@ section {
  			margin: 1em 0;
 		}
 
-	.philly {
-		//width: 45%;
+	.philly img{
+		width: 50%;
 		float: right;
+		position: relative;
+		left: 5em;
 	}
 
 /* Quote ----------------------------------------------- */
@@ -367,7 +369,7 @@ section {
 /* Media Queries -----------------------------------------------*/
 
 /* Smartphones */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 999px) {
     .container { 
     	padding: 2em;
     }
@@ -390,7 +392,7 @@ section {
 } 
 
 /* Tablet Portrait (to landscape and desktop) */
-@media only screen and (max-width: 1074px) {
+//@media only screen and (max-width: 1074px) {
 
 	.philly {
 		width: 50%;
