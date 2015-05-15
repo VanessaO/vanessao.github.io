@@ -27,23 +27,8 @@ $(document).ready(function(){
     	captions: 'custom',
     	captionsEl: '.caption'
     });
-
-   //Enables smooth scrolling to each section
-   $('a[href*=#]:not([href=#])').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-	        || location.hostname == this.hostname) {
-
-	        var target = $(this.hash);
-	        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	           if (target.length) {
-	             $('html,body').animate({
-	                 scrollTop: target.offset().top
-	            }, 1000);
-	            return false;
-	        }
-	    }
-	}); 
-
+    
+   //Temporarily remove title attribute on hovered Slippry Images
    $("#slippry-demo li").hover(function(){
  
         // Get the current title
@@ -67,6 +52,24 @@ $(document).ready(function(){
          
     });
 
+
+   //Enables smooth scrolling to each section
+   $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+	        || location.hostname == this.hostname) {
+
+	        var target = $(this.hash);
+	        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	           if (target.length) {
+	             $('html,body').animate({
+	                 scrollTop: target.offset().top
+	            }, 1000);
+	            return false;
+	        }
+	    }
+	}); 
+
+  
 
 
 
