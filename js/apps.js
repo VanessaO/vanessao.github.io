@@ -60,10 +60,10 @@ $(document).ready(function(){
   $(".sy-controls").click(function(){// Fired when we leave the element
  
         // Retrieve the title from the temporary attribute
-        var title = $(#slippry-demo li).attr("tmp_title");
+        var title = $("#slippry-demo li").attr("tmp_title");
  
         // Return the title to what it was
-        $(#slippry-demo li).attr("title", title);
+        $("#slippry-demo li").attr("title", title);
          
     });
 
