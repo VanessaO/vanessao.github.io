@@ -52,8 +52,12 @@ $(document).ready(function(){
          
     });
 
+<<<<<<< HEAD
 
    //Enables smooth scrolling to each section
+=======
+   //Smooth scrolling to each section
+>>>>>>> upstream/master
    $('a[href*=#]:not([href=#])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
 	        || location.hostname == this.hostname) {
@@ -69,6 +73,7 @@ $(document).ready(function(){
 	    }
 	}); 
 
+<<<<<<< HEAD
   
 
 
@@ -85,4 +90,6 @@ $(document).ready(function(){
 
 
 
+=======
+>>>>>>> upstream/master
 });
