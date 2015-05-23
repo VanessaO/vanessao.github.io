@@ -343,6 +343,11 @@ section {
 .frame span:last-child {
 	background-color: #0037fe;
 }
+
+.caption {
+	display: block;
+}
+
 .caption h1:hover {
 	color: #a3e400;
 }
