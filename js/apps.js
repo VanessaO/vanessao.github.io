@@ -28,7 +28,7 @@ $(document).ready(function(){
     	captionsEl: '.caption'
     });
 
-   //
+   //Smooth scrolling to each section
    $('a[href*=#]:not([href=#])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
 	        || location.hostname == this.hostname) {
@@ -43,21 +43,5 @@ $(document).ready(function(){
 	        }
 	    }
 	}); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 });
