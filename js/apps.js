@@ -53,9 +53,36 @@ $(document).ready(function(){
     });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
    //Enables smooth scrolling to each section
 =======
+=======
+    //Temporarily remove title attribute on hovered Slippry Images
+    $("#slippry-demo li").hover(function(){
+  
+         // Get the current title
+         var title = $(this).attr("title");
+  
+         // Store it in a temporary attribute
+         $(this).attr("tmp_title", title);
+  
+         // Set the title to nothing so we don't see the tooltips
+         $(this).attr("title","");
+          
+     });
+  
+   $(".sy-controls").click(function(){// Fired when we leave the element
+  
+         // Retrieve the title from the temporary attribute
+         var title = $("#slippry-demo li").attr("tmp_title");
+  
+         // Return the title to what it was
+         $("#slippry-demo li").attr("title", title);
+          
+     });
+
+>>>>>>> b295678ec24d05976724857c7e77b27a59233c25
    //Smooth scrolling to each section
 >>>>>>> upstream/master
    $('a[href*=#]:not([href=#])').click(function() {
