@@ -52,12 +52,8 @@ $(document).ready(function(){
          
     });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
    //Enables smooth scrolling to each section
-=======
-=======
+
     //Temporarily remove title attribute on hovered Slippry Images
     $("#slippry-demo li").hover(function(){
   
@@ -82,9 +78,7 @@ $(document).ready(function(){
           
      });
 
->>>>>>> b295678ec24d05976724857c7e77b27a59233c25
    //Smooth scrolling to each section
->>>>>>> upstream/master
    $('a[href*=#]:not([href=#])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
 	        || location.hostname == this.hostname) {
@@ -100,7 +94,6 @@ $(document).ready(function(){
 	    }
 	}); 
 
-<<<<<<< HEAD
   
 
 
