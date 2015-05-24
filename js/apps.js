@@ -93,23 +93,4 @@ $(document).ready(function(){
 	        }
 	    }
 	}); 
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> upstream/master
 });
