@@ -28,8 +28,8 @@ $(document).ready(function(){
     	captionsEl: '.caption'
     });
 
-    //Temporarily remove title attribute on hovered Slippry Images
-    $("#slippry-demo li").hover(function(){
+  /*  //Temporarily remove title attribute on hovered Slippry Images
+    $(".sy-active").hover(function(){
   
          // Get the current title
          var title = $(this).attr("title");
@@ -42,15 +42,15 @@ $(document).ready(function(){
           
      });
   
-   $(".sy-controls").click(function(){// Fired when we leave the element
+   $(".sy-active").mouseout(function(){// Fired when we leave the element
   
          // Retrieve the title from the temporary attribute
-         var title = $("#slippry-demo li").attr("tmp_title");
+         var title = $(this).attr("tmp_title");
   
          // Return the title to what it was
-         $("#slippry-demo li").attr("title", title);
+         $(this).attr("title", title);
           
-     });
+     }); */
 
    //Smooth scrolling to each section
    $('a[href*=#]:not([href=#])').click(function() {
