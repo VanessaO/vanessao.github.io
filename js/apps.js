@@ -28,7 +28,6 @@ $(document).ready(function(){
     	captionsEl: '.caption'
     });
     
-<<<<<<< HEAD
    //Temporarily remove title attribute on hovered Slippry Images
    $("#slippry-demo li").hover(function(){
  
@@ -53,11 +52,8 @@ $(document).ready(function(){
          
     });
 
-<<<<<<< HEAD
    //Enables smooth scrolling to each section
 
-=======
->>>>>>> 14724813a73c3ab596cb3b6061410f0a48fce15d
   /*  //Temporarily remove title attribute on hovered Slippry Images
     $(".sy-active").hover(function(){
   
@@ -83,9 +79,8 @@ $(document).ready(function(){
      }); */
 
    //Smooth scrolling to each section
-=======
+
    //Enables smooth scrolling to each section
->>>>>>> e82399da646f1c1defcfeb6ec3ca1f15f415e0bf
    $('a[href*=#]:not([href=#])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
 	        || location.hostname == this.hostname) {
