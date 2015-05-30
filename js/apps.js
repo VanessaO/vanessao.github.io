@@ -52,8 +52,11 @@ $(document).ready(function(){
          
     });
 
+<<<<<<< HEAD
    //Enables smooth scrolling to each section
 
+=======
+>>>>>>> 14724813a73c3ab596cb3b6061410f0a48fce15d
   /*  //Temporarily remove title attribute on hovered Slippry Images
     $(".sy-active").hover(function(){
   
