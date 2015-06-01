@@ -28,58 +28,6 @@ $(document).ready(function(){
     	captionsEl: '.caption'
     });
     
-   //Temporarily remove title attribute on hovered Slippry Images
-   $("#slippry-demo li").hover(function(){
- 
-        // Get the current title
-        var title = $(this).attr("title");
- 
-        // Store it in a temporary attribute
-        $(this).attr("tmp_title", title);
- 
-        // Set the title to nothing so we don't see the tooltips
-        $(this).attr("title","");
-         
-    });
- 
-  $(".sy-controls").click(function(){// Fired when we leave the element
- 
-        // Retrieve the title from the temporary attribute
-        var title = $("#slippry-demo li").attr("tmp_title");
- 
-        // Return the title to what it was
-        $("#slippry-demo li").attr("title", title);
-         
-    });
-
-   //Enables smooth scrolling to each section
-
-  /*  //Temporarily remove title attribute on hovered Slippry Images
-    $(".sy-active").hover(function(){
-  
-         // Get the current title
-         var title = $(this).attr("title");
-  
-         // Store it in a temporary attribute
-         $(this).attr("tmp_title", title);
-  
-         // Set the title to nothing so we don't see the tooltips
-         $(this).attr("title","");
-          
-     });
-  
-   $(".sy-active").mouseout(function(){// Fired when we leave the element
-  
-         // Retrieve the title from the temporary attribute
-         var title = $(this).attr("tmp_title");
-  
-         // Return the title to what it was
-         $(this).attr("title", title);
-          
-     }); */
-
-   //Smooth scrolling to each section
-
    //Enables smooth scrolling to each section
    $('a[href*=#]:not([href=#])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
