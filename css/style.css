@@ -277,7 +277,7 @@ section {
 .quote {
 	background-color: #fe5a19;
 }
-	.quote .container p, h1, ul {
+	.quote .container p, h1, .skillset h2, ul{
 		font-size: 1.5em;
 		font-family: 'Oswald', serif;
 		font-weight: lighter;
@@ -290,10 +290,19 @@ section {
 		font-weight: bold;
 	}
 
-	.quote ul > li {
-			display: inline-block;
-			margin: 0 1em;
+	.skillset {
+		text-align: center;
 	}
+		.skillset h2 {
+			margin-top: 1em;
+			color: #fec700; 
+			font-weight: bold;
+		}
+		.skillset p {
+		    display: inline;
+		    margin: 0.5em;
+
+		}
 
 /* Portfolio ----------------------------------------------- */
 
